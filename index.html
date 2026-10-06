@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجري المميز - تسوق أونلاين</title>
+    <style>
+        /* إعدادات الألوان الجذابة والخطوط */
+        :root {
+            --primary: #6366f1; /* لون بنفسجي عصري */
+            --accent: #ec4899; /* لون وردي ملفت للأزرار */
+            --bg-color: #f8fafc; /* خلفية فاتحة ومريحة للعين */
+            --text-dark: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+        }
+
+        /* تصميم الرأس (الهيدر) */
+        header {
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            color: white;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+        }
+
+        /* القسم الترحيبي الجذاب */
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background-color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        /* شبكة المنتجات */
+        .products-section {
+            padding: 4rem 5%;
+        }
+
+        .products-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        /* بطاقة المنتج */
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            width: 300px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-weight: bold;
+        }
+
+        .product-details {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .product-price {
+            color: var(--primary);
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        /* الأزرار */
+        .btn-buy {
+            background: linear-gradient(90deg, var(--accent), #f43f5e);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            width: 100%;
+        }
+
+        .btn-buy:hover {
+            opacity: 0.9;
+        }
+
+        /* قسم التواصل */
+        .contact-section {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366; /* لون واتساب الرسمي */
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #020617;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>🛍️ متجري</h2>
+        <div>
+            <span style="cursor:pointer; margin-left: 15px;">الرئيسية</span>
+            <span style="cursor:pointer;">المنتجات</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>أهلاً بك في عالم التسوق الممتع</h1>
+        <p>اكتشف أفضل المنتجات التي تناسب ذوقك وبأسعار لا تقبل المنافسة.</p>
+    </section>
+
+    <section class="products-section">
+        <h2 class="products-title">أحدث المنتجات</h2>
+        <div class="products-grid">
+            
+            <!-- المنتج الأول -->
+            <div class="product-card">
+                <div class="product-image">[صورة المنتج هنا]</div>
+                <div class="product-details">
+                    <h3>اسم المنتج الأول</h3>
+                    <p class="product-price">$25.00</p>
+                    <button class="btn-buy">اطلب الآن</button>
+                </div>
+            </div>
+
+            <!-- المنتج الثاني -->
+            <div class="product-card">
+                <div class="product-image">[صورة المنتج هنا]</div>
+                <div class="product-details">
+                    <h3>اسم المنتج الثاني</h3>
+                    <p class="product-price">$40.00</p>
+                    <button class="btn-buy">اطلب الآن</button>
+                </div>
+            </div>
+
+            <!-- المنتج الثالث -->
+            <div class="product-card">
+                <div class="product-image">[صورة المنتج هنا]</div>
+                <div class="product-details">
+                    <h3>اسم المنتج الثالث</h3>
+                    <p class="product-price">$15.00</p>
+                    <button class="btn-buy">اطلب الآن</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>جاهز للطلب؟</h2>
+        <p>تواصل معنا مباشرة عبر واتساب لطلب منتجاتك أو الاستفسار عنها.</p>
+        <!-- قمت بإضافة مفتاح لبنان +961 بناءً على صيغة الرقم، يمكنك تغييره إذا كان لبلد آخر -->
+        <a href="https://wa.me/96181136493" class="whatsapp-btn" target="_blank">
+            💬 تواصل معنا: 81136493
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لمتجري.</p>
+    </footer>
+
+    <script>
+        // كود برمجي بسيط لإعطاء تنبيه عند الضغط على زر "اطلب الآن"
+        const buyButtons = document.querySelectorAll('.btn-buy');
+        buyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('شكراً لاهتمامك! يرجى النزول لأسفل الصفحة والضغط على زر الواتساب لإتمام الطلب.');
+            });
+        });
+    </script>
+</body>
+</html>
